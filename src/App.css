@@ -1,0 +1,87 @@
+.background {
+  display: flex;
+  background-color: saddlebrown;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#drum-machine {
+  border: 3px solid gold;
+  height: 60%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: brown;
+}
+
+.pad, .display-container {
+  height: 45%;
+  width: auto;
+  aspect-ratio: 1;
+  box-sizing: border-box;
+}
+
+.pad {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(10% / 3);
+  justify-content: center;
+  align-items: center;
+}
+
+.display-container {
+  background-color: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: -30%;
+}
+
+.pad button {
+  flex: 1 0 30%;
+  aspect-ratio: 1;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+  border: none;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px gold;
+  color: gold;
+  background-color: saddlebrown;
+}
+
+#display {
+  background-color: olivedrab;
+  height: 20px;
+  width: 100px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  border-radius: 3px;
+}
+
+@media (min-width: 768px) {
+  #drum-machine {
+    flex-direction: row;
+    width: 50%;
+    height: 45%;
+  }
+
+  .pad, .display-container {
+    width: 30%;
+    height: auto;
+    aspect-ratio: 1;
+  }
+}
